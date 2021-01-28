@@ -1,9 +1,17 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <el-container id="nav">
+    <el-header>  ro-cli ui  </el-header>
+    <el-main>
+      <el-header>
+        <router-link to="/">HelloWorld</router-link> |
+        <router-link to="/projects">Projects</router-link> |
+        <router-link to="/create">Create</router-link> |
+        <router-link to="/import">Import</router-link>
+      </el-header>
+      <p>~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+      <router-view/>
+    </el-main>
+  </el-container>
 </template>
 
 <style>
